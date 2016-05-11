@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hi Kirk!</title>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+function onPageLoad () {
+	
+	$.ajax({
+		
+		url: "HelloWorld?term=(P->R)",
+		dataType: "text"
+				
+	}).done(function (response) {
+		
+		$("#hello").html(response);
+		
+	}).fail(function (xhr, status, error) {
+		
+		alert(error);
+		
+	});
+	
+}
+</script>
+</head>
+<body onLoad="onPageLoad()">
+<p id="hello"></p>
+</body>
+</html>

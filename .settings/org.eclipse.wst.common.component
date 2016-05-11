@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="TT_Webservice">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="TT1_Kelly_ByteArray.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/TT1_Kelly_ByteArray/TT1_Kelly_ByteArray">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Term1_Kelly_ByteArray.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Term1_Kelly_ByteArray/Term1_Kelly_ByteArray">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="TT_Webservice"/>
+        <property name="java-output-path" value="/TT_Webservice/build/classes"/>
+    </wb-module>
+</project-modules>
